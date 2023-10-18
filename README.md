@@ -14,3 +14,7 @@ The echo client allows for a user to send messages to the server, which are then
 When the user types "end" to send to the server, "dne" is sent back and the client terminates.
 
 
+# Example Usage
+
+![image](https://postimg.cc/t1fV6Wys)
+
