@@ -16,5 +16,6 @@ When the user types "end" to send to the server, "dne" is sent back and the clie
 
 # Example Usage
 
-![image](https://postimg.cc/t1fV6Wys)
+
+![output3](https://github.com/chaszm/EchoServer/assets/123278965/aea8b34e-b2a3-41fb-a476-12fd71a42c2c)
 
