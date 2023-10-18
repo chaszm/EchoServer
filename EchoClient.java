@@ -8,8 +8,7 @@ import java.net.Socket;
 
 //if user wants to stop client program, they type end.
 // this will make client send message to server, and then WAITS for the message "dne" from server
-// if client recieves dne message, terminates without showing dne
-
+// if client recieves dne message, terminates
 
 public class EchoClient {
     public static void main(String[] args){
@@ -43,19 +42,19 @@ public class EchoClient {
             bufferW.flush(); // flush when enter key
 
             message = bufferR.readLine();
-            System.out.println("Server: " + message); // message from SERVER (reverse)
+            System.out.println("Server: " + message); // message from SERVER (reversed)
 
 
 
 
 
-            if(message.equalsIgnoreCase("dne"))  //if message sent to server is DNE??, break out
+            if(message.equalsIgnoreCase("dne"))  //if message from server is "dne", break out
                 break;
 
             }
         }
 
-        catch (IOException e) {
+        catch (IOException e) {                //error handling
             throw new RuntimeException(e);
         }finally{
             try{
