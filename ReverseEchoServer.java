@@ -4,6 +4,11 @@ import java.util.Scanner;
 import java.net.Socket;
 import java.net.ServerSocket;
 
+//Echo Server
+// Receives string message from client
+//displays message, then reverses and sends back to client
+//terminates when reversed message is "dne"
+
 public class ReverseEchoServer {
     public static void main(String[] args) throws IOException {
 
