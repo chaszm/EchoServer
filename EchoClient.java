@@ -24,7 +24,8 @@ public class EchoClient {
 
 
         try{
-            sock = new Socket("localhost", 5555);
+            sock = new Socket("localhost", 5555); // LOCALHOST for running on same machine 
+                                                    // replace with IP address of Server to run on different machines
 
             input = new InputStreamReader(sock.getInputStream());
             output = new OutputStreamWriter(sock.getOutputStream());
